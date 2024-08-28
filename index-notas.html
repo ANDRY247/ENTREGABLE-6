@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Notas</title>
+    <!-- Integración de Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1 class="text-center mb-4">Mis tareas</h1>
+        
+        <!-- Contador de Notas Completadas -->
+        <h3>Notas Completadas: 0</h3>
+       
+        <!-- Campo de Entrada para Nueva Nota -->
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="entradaNota" placeholder="Solicitar atención profesional" aria-label="Nota" aria-describedby="botonAñadirNota">
+            <div class="input-group-append">
+                <button class="btn btn-primary btn-custom" id="botonAñadirNota">Añadir</button>
+            </div>
+        </div>
+
+         <!-- Campo de Búsqueda -->
+         <div class="input-group mb-3">
+            <input type="text" class="form-control" id="inputBusqueda" placeholder="Buscar nota" aria-label="Buscar nota">
+        </div>
+        
+        <!-- Lista de Notas -->
+        <ul class="list-group" id="listaNotas">
+            <!-- Las notas se agregarán aquí -->
+        </ul>
+    </div>
+
+    <!-- Modal para editar nota -->
+    <div class="modal fade" id="modalEditarNota" tabindex="-1" role="dialog" aria-labelledby="modalEditarNotaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalEditarNotaLabel">Editar Nota</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="entradaEditarNota">Nueva Nota</label>
+                        <input type="text" class="form-control" id="entradaEditarNota" placeholder="Introduce la nueva nota">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-custom" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary btn-custom" id="botonGuardarCambios">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="notas.js"></script>
+</body>
+</html>

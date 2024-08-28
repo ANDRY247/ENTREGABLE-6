@@ -1,0 +1,91 @@
+body {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    background-image: url('./Imagen14.jpeg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: #b82877;
+}
+.Mistareas{
+    font-family: "Homemade Apple", cursive;
+    color: #ffffff;
+    text-align: center;
+}
+
+.contenedor {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-family:  "Caveat", cursive;
+    color: #b82877;
+    background: #ffffff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    border: 1px solid #b2ebf2; 
+    
+}
+.item-lista {
+    transition: transform 0.3s, background-color 0.3s;
+    padding: 5px;
+    padding-left: 30px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-lista:hover {
+    transform: scale(1.02);
+    background-color: #b2dfdb; 
+}
+.btn-custom {
+    border-radius: 20px;
+    padding: 10px 20px; 
+    font-size: 16px;
+    font-weight: bold; 
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
+}
+.btn-editar {
+    background-color: #4caf50; 
+    border: none; 
+    color: #ffffff; 
+}
+.btn-editar:hover {
+    background-color: #388e3c; 
+    color: #ffffff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.btn-eliminar {
+    background-color: #f44336; 
+    border: none; 
+    color: #ffffff;
+}
+.btn-eliminar:hover {
+    background-color: #c62828; 
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.input-group input {
+    height: 2.5rem; 
+}
+.input-group .input-group-append .btn {
+    height: 2.5rem;
+}
+.form-control {
+    border-radius: 50px 0px 0px 50px;
+}
+#inputBusqueda {
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
